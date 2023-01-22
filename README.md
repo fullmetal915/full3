@@ -1,4 +1,6 @@
 # full3
 The Data Mining coursework consisting of Linear Regression And Logistic Regression. Both are very crucial regression and classification technique. The logistic regression model also consist of Newton itterative method algorithum. Linear and Logistic Regression uses Kfold cross validation. The Data Mining coursework also consist of Naive Bayes Implementaion as well.
+
 The time series forcasting project consist of time series forcasting of Stock Market endqoute using simple moving average methods. The data is collected using users request from iexcloud api and then forcasted.
+
 BTech major project was on Distance Monitoring and Data Transfer using RF communcation. It was compiled in C language. The pdf consist of thesis along with code in it.
