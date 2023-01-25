@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<h1>INFROMATION</h1>
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">SYMBOL</th>
+                <th scope="col">NUMBER OF SHARE</th>
+                <th scope="col">ACTION</th>
+                <th scope="col">NET_CASH</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for history in historys %}
+                <tr>
+                    <th scope="row"></th>
+                    <td>
+                        {{ history["symbol"] }}
+                    </td>
+                    <td>
+                        {{ history["No_of_share"] }}
+                    </td>
+                    <td>
+                        {{ history["ACTION"] }}
+                    </td>
+                    <td>
+                        {{ history["NET_CASH"] }}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

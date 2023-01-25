@@ -1,0 +1,46 @@
+{% extends "layout.html"%}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <h1>INFROMATION</h1>
+    <table class="table">
+        <thead class="thead-light">
+            <tr scope="col">
+                <th>STOCK SYMBOL</th>
+                <th>NUMBER OF SHARE</th>
+                <th>CURRENT PRICE</th>
+                <th>TOTAL</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for portfolio in portfolios %}
+                <tr>
+                    <th scope="row"></th>
+                    <td>{{ portfolio['symbol'] }}</td>
+                    <td>{{ portfolio['quantity'] }}</td>
+                    <td>{{ portfolio['price'] }}</td>
+                    <td>{{ portfolio['total'] }}</td>
+                    <td></td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>CASH</td>
+                <td></td>
+                <td></td>
+                <td>{{ cashs }}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>TOTAL</strong></td>
+                <td></td>
+                <td></td>
+                <td>{{ total }}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

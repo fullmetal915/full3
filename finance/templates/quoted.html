@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+<div action="/qouted" methord="post">
+    A share of {{quote_dic["name"]}} {{quote_dic["symbol"]}} costs ${{quote_dic["price"]}}
+</div>
+{% endblock %}
